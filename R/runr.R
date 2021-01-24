@@ -1,4 +1,4 @@
 runr <- function() {
-  remove.packages(c('stringr', 'tidyr', 'RColorBrewer'))
-  print(installed.packages())
+    suppressMessages(suppressWarnings({remove.packages(c('stringr', 'tidyr', 'RColorBrewer'))}))
+    print(installed.packages())
 }
